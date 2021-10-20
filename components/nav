@@ -1,0 +1,19 @@
+    <!-- Navigation Bar -->
+    <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="media/train-logo with title-light color.svg" alt="Discovery Station Preschool"/></a>
+    
+        <i class="fas fa-bars bars nav__toggler"></i>
+        <ul class="nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Abous Us</a></li>
+          <li class="nav__item nav--dropdown">
+            <a class="nav__program" href="#">Our Programs</a>
+            <div class="nav--dropdown__content">
+              <a class="dropdown__content__list" href="#">Junior Kindergarten</a>
+              <a class="dropdown__content__list" href="#">Ready to Read</a>
+            </div>
+          </li>
+          <li class="nav__item"><a href="#">Our Teachers</a></li>
+          <li class="nav__item"><a href="#">Contact Us</a></li>
+        </ul>
+    
+        </nav>
