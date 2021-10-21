@@ -1688,25 +1688,80 @@ function EmblaCarousel(sliderRoot, userOptions) {
 
 var _default = EmblaCarousel;
 exports.default = _default;
+},{}],"src/js/autoplay.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.autoplay = void 0;
+
+var autoplay = function autoplay(embla, interval) {
+  var timer = 0;
+
+  var play = function play() {
+    stop();
+    requestAnimationFrame(function () {
+      return timer = window.setTimeout(next, interval);
+    });
+  };
+
+  var stop = function stop() {
+    window.clearTimeout(timer);
+    timer = 0;
+  };
+
+  var next = function next() {
+    if (embla.canScrollNext()) {
+      embla.scrollNext();
+    } else {
+      embla.scrollTo(0);
+    }
+
+    play();
+  };
+
+  return {
+    play: play,
+    stop: stop
+  };
+};
+
+exports.autoplay = autoplay;
 },{}],"src/js/prevAndNextButtons.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.setupPrevNextBtns = exports.disablePrevNextBtns = void 0;
+exports.listenForPrevBtnClick = exports.listenForNextBtnClick = exports.disablePrevNextBtns = void 0;
 
-var setupPrevNextBtns = function setupPrevNextBtns(prevBtn, nextBtn, embla) {
-  prevBtn.addEventListener('click', embla.scrollPrev, false);
-  nextBtn.addEventListener('click', embla.scrollNext, false);
+var listenForPrevBtnClick = function listenForPrevBtnClick(btn, embla, autoplayer) {
+  var scrollPrev = function scrollPrev() {
+    autoplayer.stop();
+    embla.scrollPrev();
+  };
+
+  btn.addEventListener("click", scrollPrev, false);
 };
 
-exports.setupPrevNextBtns = setupPrevNextBtns;
+exports.listenForPrevBtnClick = listenForPrevBtnClick;
+
+var listenForNextBtnClick = function listenForNextBtnClick(btn, embla, autoplayer) {
+  var scrollNext = function scrollNext() {
+    autoplayer.stop();
+    embla.scrollNext();
+  };
+
+  btn.addEventListener("click", scrollNext, false);
+};
+
+exports.listenForNextBtnClick = listenForNextBtnClick;
 
 var disablePrevNextBtns = function disablePrevNextBtns(prevBtn, nextBtn, embla) {
   return function () {
-    if (embla.canScrollPrev()) prevBtn.removeAttribute('disabled');else prevBtn.setAttribute('disabled', 'disabled');
-    if (embla.canScrollNext()) nextBtn.removeAttribute('disabled');else nextBtn.setAttribute('disabled', 'disabled');
+    if (embla.canScrollPrev()) prevBtn.removeAttribute("disabled");else prevBtn.setAttribute("disabled", "disabled");
+    if (embla.canScrollNext()) nextBtn.removeAttribute("disabled");else nextBtn.setAttribute("disabled", "disabled");
   };
 };
 
@@ -1778,12 +1833,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/css/reset.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/css/base.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/css/base.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/css/reset.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -1798,11 +1853,13 @@ module.hot.accept(reloadCSS);
 
 var _emblaCarousel = _interopRequireDefault(require("embla-carousel"));
 
+var _autoplay = require("./autoplay");
+
 var _prevAndNextButtons = require("./prevAndNextButtons");
 
-require("../css/reset.css");
-
 require("../css/base.css");
+
+require("../css/reset.css");
 
 require("../css/embla.css");
 
@@ -1813,14 +1870,17 @@ var viewPort = wrap.querySelector(".embla__viewport");
 var prevBtn = wrap.querySelector(".embla__button--prev");
 var nextBtn = wrap.querySelector(".embla__button--next");
 var embla = (0, _emblaCarousel.default)(viewPort, {
-  loop: true,
   skipSnaps: false
 });
+var autoplayer = (0, _autoplay.autoplay)(embla, 4000);
 var disablePrevAndNextBtns = (0, _prevAndNextButtons.disablePrevNextBtns)(prevBtn, nextBtn, embla);
-(0, _prevAndNextButtons.setupPrevNextBtns)(prevBtn, nextBtn, embla);
+(0, _prevAndNextButtons.listenForPrevBtnClick)(prevBtn, embla, autoplayer);
+(0, _prevAndNextButtons.listenForNextBtnClick)(nextBtn, embla, autoplayer);
 embla.on("select", disablePrevAndNextBtns);
 embla.on("init", disablePrevAndNextBtns);
-},{"embla-carousel":"node_modules/embla-carousel/embla-carousel.esm.js","./prevAndNextButtons":"src/js/prevAndNextButtons.js","../css/reset.css":"src/css/reset.css","../css/base.css":"src/css/base.css","../css/embla.css":"src/css/embla.css"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+embla.on("pointerDown", autoplayer.stop);
+embla.on("init", autoplayer.play);
+},{"embla-carousel":"node_modules/embla-carousel/embla-carousel.esm.js","./autoplay":"src/js/autoplay.js","./prevAndNextButtons":"src/js/prevAndNextButtons.js","../css/base.css":"src/css/base.css","../css/reset.css":"src/css/reset.css","../css/embla.css":"src/css/embla.css"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1848,7 +1908,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49904" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50884" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
