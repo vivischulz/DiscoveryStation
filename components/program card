@@ -1,0 +1,11 @@
+<div class="grid grid--1x2 programContainer" >
+  <div class="card card--primary">
+  <header class="card__header">JUNIOR KINDERGARTEN</header>
+  <div class="card__body">Our diverse, educational thematic preschool curriculum in our Two and Three day program are really a Junior Kindergarten program that dedicates time to lesson extension of activities.</div>
+  <button class="btn btn--light">LEARN MORE</button>
+  </div>
+<div class="card card--secondary">
+  <header class="card__header">READY TO READ</header>
+  <div class="card__body">“A child’s attitude to reading is of such importance that more often than not it determines his/her scholastic fate. Moreover, their experience in learning to read may decide how they feel about learning in general and even themselves as an individual.” Bruno Bettleheim</div>
+  <button class="btn btn--light">LEARN MORE</button>
+  </div>

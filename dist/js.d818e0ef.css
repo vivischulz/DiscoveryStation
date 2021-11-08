@@ -55,6 +55,14 @@ h1{
   }  
 }
 
+.primary{
+	color:var(--color-primary);
+}
+
+.grey{
+	color:#333;
+}
+
 .slide--heading{
     z-index:1;
     position:absolute;
@@ -241,6 +249,10 @@ border-radius: 0 0 15px 15px;
 
 }
 
+hr {
+    border-top: 3px solid #eee;
+    margin: 3rem 0;
+}
 
 /* grid */
 .grid{
@@ -280,7 +292,7 @@ border-radius: 0 0 15px 15px;
 }
 
   /* card */
-  .programContainer{
+  .container{
   padding:4rem;
   }
   .card{
