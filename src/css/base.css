@@ -174,7 +174,7 @@ transition:all 0.3s;
   .nav__list{
     display:flex;
     width:auto;
-    font-size:1.8rem;
+    font-size:2rem;
     max-height:100%;
     opacity:1;
   }
@@ -290,11 +290,27 @@ hr {
 .btn--light{
 	background: var(--color-light);
 }
+.wrapper{
+	max-width:1200px;
+	margin:0 auto;
+}
 
   /* card */
   .container{
-  padding:4rem;
+  padding:2rem;
   }
+
+  @media screen and (min-width:768px){
+	.container{
+		padding:4rem;
+		}
+	}
+	@media screen and (min-width:1024px){
+		.container{
+			padding:6rem;
+			}
+		}
+
   .card{
 	  box-shadow: 0 0 20px 10px #f3f3f3;
 	  border-radius:7px;
