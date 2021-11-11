@@ -1,0 +1,14 @@
+    <div class="container--gradient container--title about-us">
+      <picture>
+        <source
+          type="image/jpg"
+          srcset="media/about-us@2x.jpeg 720w, media/about-us.jpeg 360w"
+          sizes="100vw">
+        <img
+          class="about-us--img"
+          src="media/about-us@2x.jpeg"
+          alt="About Discovery Station">
+          </img> 
+      </picture>
+      <h1 class="about-us--title">About us </h1>
+    </div>
