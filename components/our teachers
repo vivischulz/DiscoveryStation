@@ -1,0 +1,174 @@
+<!-- Our teacher -->
+
+      <div class="block wrapper">
+       <h2 class="header--padding background-light title-padding title-center">Our Teachers</h2>
+       <div class="primary">
+         <br><h3>At Discovery Station Preschool, we know that the best learning occurs through hands-on, joy filled interactions. </h3><br>
+         <h3>You will find our educators full of enthusiasm, love and dedication to the teaching of young children.</h3><br> 
+         <h3>Our programing requires intelligent and highly skilled instructors who intentionally engage in child centred activities to facilitate rich and relevant learning. </h3><br> 
+         
+         <h3>We are very proud of our exceptional teachers.  All teachers have been licensed by the Child Care Facilities Licencing Board  and In accordance with Provincial Regulations, hold an up to date Criminal Record Check and First Aid Certificate.  Professional development is ongoing.<h3> </br>
+
+</h3>
+<hr>
+<div class="container-teacher">
+  <div class="grid grid--1x2">
+           
+          <picture class="teacher--img">
+              <source
+              type="image/jpg"
+              srcset="media/mrs_spoor@2x.jpeg 720w, media/mrs_spoor.jpeg 360w"
+              sizes="100vw">
+              
+                         
+                <img  src="media/mrs_spoor@2x.jpeg" alt="Owner of the Discovery Station Preschool">
+                        
+            </picture>
+       
+          <table>
+              <tr>
+                <th><P>Carolyn Spoor</P></th>
+                <td ><P>AKA Mrs. Spoor</P></td>
+              </tr>
+              
+              <tr>
+                <th class="th__odd"><p>Title</p></th>
+                <td><p>Owner/Manger</p></td>
+              </tr>
+               <tr>
+                 <th><p>Family</p></th>
+                 <td><p>3 children (Discovery Station graduates)</p></td>
+              </tr>
+              <tr>
+                <th class="th__odd"><p>Favourite Colour</p></th>
+                <td><p>Blue</p></td>
+              </tr>
+              <tr>
+                <th><p>Favourite part of Preschool</p></th>
+                <td><p>"I love seeing the children
+              
+               learn to solve problems and gain independence.
+              
+              They are so proud when they do something
+              
+               by themselves for the first time."</p></td>
+              </tr>
+              <tr>
+                <th class="th__odd"><p>Favourite Beverage</p></th>
+                <td><p>Coconut Milk Latte</p></td>
+              </tr>
+              <tr>
+                <th><p>Qualifications</p></th>
+                <td><p>Early Childhood Educator</p></td>
+              </tr>
+              </table>         
+  </div>
+</div>
+
+<hr>
+<div class="container-teacher">
+  <div class="grid grid--1x2">
+           
+             <picture class="teacher--img">
+              <source
+              type="image/jpg"
+              srcset="media/miss_samara@2x.jpeg 720w, media/miss_samara.jpeg 360w"
+              sizes="100vw">
+              
+                         
+                <img  src="media/miss_samara@2x.jpeg" alt="Owner of the Discovery Station Preschool">
+                        
+            </picture>
+       
+          <table>
+              <tr>
+                <th><P>Samara Eyzenga</P></th>
+                <td ><P>AKA Miss. Samara</P></td>
+              </tr>
+              
+              <tr>
+                <th class="th__odd"><p>Title</p></th>
+                <td><p> Early Childhood Educator</p></td>
+              </tr>
+               <tr>
+                 <th><p>Family</p></th>
+                 <td><p>2 sisters and parents living in Langley</p></td>
+              </tr>
+              <tr>
+                <th class="th__odd"><p>Favourite Colour</p></th>
+                <td><p>Purple</p></td>
+              </tr>
+              <tr>
+                <th><p>Favourite part of Preschool</p></th>
+                <td><p>"I love one-on-one and small group interactions.
+
+It is so much fun to engage the children in conversation, to laugh with them as they play."</p></td>
+              </tr>
+              <tr>
+                <th class="th__odd"><p>Favourite Beverage</p></th>
+                <td><p>Chai Tea Latte</p></td>
+              </tr>
+              <tr>
+                <th><p>Qualifications</p></th>
+                <td><p>Early Childhood Educator</p></td>
+              </tr>
+              </table>         
+  </div>
+</div>
+
+
+
+<hr>
+<div class="container-teacher">
+  <div class="grid grid--1x2">
+            
+            <picture class="teacher--img">
+              <source
+              type="image/jpg"
+              srcset="media/mrs_white@2x.jpeg 720w, media/mrs_white.jpeg 360w"
+              sizes="100vw">
+              
+                         
+                <img  src="media/mrs_white@2x.jpeg" alt="Owner of the Discovery Station Preschool">
+                        
+            </picture>
+       
+          <table>
+              <tr>
+                <th><P>Carol White</P></th>
+                <td ><P>AKA Mrs. White</P></td>
+              </tr>
+              
+              <tr>
+                <th class="th__odd"><p>Title</p></th>
+                <td><p>Previous Owner/Founder of Discovery Station Preschool - retired</p></td>
+              </tr>
+               <tr>
+                 <th><p>Family</p></th>
+                 <td><p> 4 married children, 13 grandchildren</p></td>
+              </tr>
+              <tr>
+                <th class="th__odd"><p>Favourite Colour</p></th>
+                <td><p>Green</p></td>
+              </tr>
+              <tr>
+                <th><p>Favourite part of Preschool</p></th>
+                <td><p>Teaching/circle time
+
+ "I enjoy using music and puppets to engage and
+
+delight the children as they learn."
+
+It is so much fun to engage the children in conversation, to laugh with them as they play."</p></td>
+              </tr>
+              <tr>
+                <th class="th__odd"><p>Favourite Beverage</p></th>
+                <td><p>Tea</p></td>
+              </tr>
+              <tr>
+                <th><p>Qualifications</p></th>
+                <td><p>Early Childhood Educator</p></td>
+              </tr>
+              </table>         
+  </div>
+</div>
