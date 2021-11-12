@@ -25,6 +25,7 @@ a{
 }
 
 
+
 body {
     line-height: 1.5;
     font-family:'Open Sans', Arial, Helvetica, sans-serif;
@@ -293,6 +294,7 @@ opacity:1;
 }
 
 
+
 /* about-us */
 .about-us--collapsible .collapsible__content{
 
@@ -539,11 +541,20 @@ hr {
     position:relative;
   }
 
-  .about-us--title{
-    position:absolute;
-    top:30%;
-    left:40%;
+  .banner--title{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
   }
+
+  .program-focus--order{
+    order:2;
+  }
+
+
+
 
   .about-us--block h1{
     color:var(--color-primary);
@@ -640,10 +651,54 @@ hr {
   width:auto;
   padding:1rem;
   border-radius: 3px;
+  text-align: right;
+}
+.family-time--wrap{
+  display:flex;
+  flex-direction: column;
+}
+
+.family-time--title{
+ align-self: flex-end;
 }
 
 .family-time-list h5{
   padding:1rem;
+}
+
+ /* Program Focus */  
+
+
+.program-focus-list ul{
+margin:0 0 0 2rem;
+}
+
+.program-focus-list li{
+  list-style: circle outside none;
+  }
+
+
+.program-focus--wrap{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.program-focus--title{
+ max-width:400px;
+ width:100%;
+padding:2rem;
+}
+
+.program-focus-content{
+  padding:2rem;
+}
+
+.program-focus--title>img{
+  clip-path: circle(50% at 50% 50%); 
+ 
 }
 
 
