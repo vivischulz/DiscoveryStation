@@ -1,0 +1,17 @@
+  <div class="card card--secondary">
+    <header class="card__header"><div class="icon--jk-container icon--jk-container--pink"><i class="far fa-grin icon--jk"></i></div></header>
+    <div class="card__body">    
+    <h2 >Number Rumba:</h2><h3 class="secondary"> early math skills :</h3>
+    
+    <ul>
+    <li><p>geometric shapes,</p></li>
+    <li><p>ordinal numbers and number sequencing</p></li>
+    <li><p>number recognition</p></li>
+    <li><p>rational counting (one-to-one correspondence)</p></li>
+    <li><p>addition and subtraction</p></li>
+    <li><p>patterning</p></li>
+    <li><p>introduction to math language</p></li>
+    </ul>
+    </div>
+    <button class="btn btn--light">LEARN MORE</button>
+    </div>

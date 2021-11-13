@@ -323,6 +323,10 @@ p{
   text-decoration: underline;
 }
 
+.heavy{
+  font-weight: 600;
+}
+
 .header--padding{
   padding-top:1rem;
   padding-bottom:1rem;
@@ -410,13 +414,18 @@ padding:0.5rem 2rem;
  width:100%;
 }
 
+
+
 .nav__item>a{
   color:var(--color-primary);
-  transition: color 0.8s linear;
+  transition: color 0.15s linear;
 }
 
+
+
 .nav__item>a:hover{
-  color:var(--color-secondary);
+  color:var(--color-secondary); 
+  text-decoration: underline var(--color-pink);
 }
 
 
@@ -434,7 +443,7 @@ padding:0.5rem 2rem;
 max-height:0;
 overflow:hidden;
 opacity:0;
-transition:all 0.3s;
+transition:all 0.15s;
 
 }
 
@@ -458,7 +467,7 @@ opacity:1;
     opacity:0;
     transition:all 0.3s;
   }
-/* about-us end*/
+
 
 .collapsible__header{
   display:flex;
@@ -474,7 +483,7 @@ opacity:1;
 .collapsible--expanded .collapsible__chevron{
   transform:rotate(0);
 }
-
+/* about-us end*/
 
 @media screen and (min-width:768px){
   .nav__toggler{
@@ -493,6 +502,7 @@ opacity:1;
     display:flex;
     width:auto;
   }
+  
 }
 
 /* nav dropdown */
@@ -503,25 +513,26 @@ max-width:100%;
 }
 
 .nav--dropdown__content{
-max-height:0;
-overflow: hidden;
+max-height:0px;
+overflow-y: hidden;
 position: relative;
 z-index:1;
--webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
+-webkit-transition: max-height 0.15s ease-in-out;
+    transition: max-height 0.15s ease-in-out;
  
 color:var(--color-primary);
 background-color: white;
-margin-top: 1.5rem;
-padding:0 1rem;
+
+padding-left:2rem;
+padding-right:2rem;
 }
 
 .nav--dropdown__content a{
  
   display: flex;
   flex-direction: column;
- padding-left:2rem;
- padding-bottom: 1rem;
+ padding-bottom: 0.5rem;
+ 
  color:var(--color-secondary);
 }
 
@@ -529,8 +540,18 @@ padding:0 1rem;
   max-height:80vh;
 }
 
+.dropdown__content__list{
+  padding:0.5rem;
+}
+
 .dropdown__content__list:hover{
   color:var(--color-primary);
+  background-color: var(--color-pink);
+  border-radius: 3px;
+  
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  padding-bottom: 0;
 }
 
 
@@ -538,10 +559,15 @@ padding:0 1rem;
 .nav__item {
    width:auto;
   }
+  .nav__item:hover {
+background-color: var(--color-pink);
+border-radius:3px;
+   }
 
 .nav--dropdown__content{
 max-height:0;
 position: absolute;
+ 
 border-radius: 0 0 15px 15px;
 -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
@@ -555,6 +581,8 @@ border-radius: 0 0 15px 15px;
 
 .nav--dropdown:hover .nav--dropdown__content{
   border-top:3px solid var(--color-light);
+  margin-top: 3rem; 
+  padding-bottom: 1rem; 
 }
 
 }
@@ -563,6 +591,8 @@ hr {
     border-top: 3px solid #eee;
     margin: 3rem 0;
 }
+
+
 
 /* grid */
 .grid{
@@ -728,15 +758,59 @@ hr {
     color:var(--color-pink);
  }
 
+ .icon--jk{
+  font-size:4rem;
+  
+ }
+
+ .icon--jk-container{
+   
+   border-radius: 100%;
+   width:6.4rem;
+   height:6.4rem;
+   display: inline-flex;
+   justify-content: center;
+   align-items:center;
+ }
+
+ .icon--jk-block .card__header{
+  text-align: center;
+  background: none;
+}
+
+.icon--jk-container--secondary{
+  background: var(--color-secondary);
+}
+
+.icon--jk-container--pink{
+  background: var(--color-pink);
+}
+
   @media screen and (min-width:768px){
     .icon{
       font-size:2rem;
     }
+    .icon--jk{
+      font-size:6rem;
+     }
+     .icon--jk-container{
+      width:9rem;
+      height:9rem;
+    }
+
     }
     @media screen and (min-width:1024px){
       .icon{
         font-size:2.8rem;
       }
+      .icon--jk{
+        font-size:8rem;
+       }
+       .icon--jk-container{
+        width:12rem;
+        height:12rem;
+      }
+
       }
 
   .border--style1{
@@ -818,23 +892,28 @@ hr {
 
  /* Program Focus */  
 
+ .program-focus-list .underline{
+   text-decoration: underline var(--color-secondary);
+ }
 
 .program-focus-list ul{
-margin:0 0 0 2rem;
+margin:1rem 2rem;
+line-height:2;
 }
 
 .program-focus-list li{
   list-style: circle outside none;
+  color:var(--color-grey);
   }
 
 
 .program-focus--wrap{
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-
+justify-items: center;
+align-items:center;
 }
+
+
+
 
 .program-focus--title{
  max-width:400px;
@@ -850,8 +929,36 @@ padding:2rem;
   clip-path: circle(50% at 50% 50%); 
  
 }
+/* junior kindergarten */
 
 
+.icon--jk-block li{
+  list-style-type: circle;
+  margin:0 2rem;
+  margin-bottom:2rem;
+}
 
+.icon--jk-price{
+  background: rgb(250,193,192);
+  background: linear-gradient(90deg, rgba(250,193,192,1) 0%, rgba(250,244,226,1) 100%);
+}
+
+.icon--jk-program{
+  justify-items: center;
+}
+
+.container--forCenter{
+  text-align: center;
+}
+
+@media screen and (min-width:768px){
+.icon--jk-program .block{
+padding-top:0;
+}
+.jk-5days .block{
+  padding-top:0; 
+}
+
+}
 
 /*# sourceMappingURL=/base.48f2b131.css.map */
