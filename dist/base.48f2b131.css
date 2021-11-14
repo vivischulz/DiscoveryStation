@@ -327,11 +327,26 @@ p{
   font-weight: 600;
 }
 
+.bg--none{
+  background: none;
+}
+
+.bg--secondary{
+  background: var(--color-secondary);
+}
+
+.bg--primary{
+  background:var(--color-primary);
+}
+
 .header--padding{
   padding-top:1rem;
   padding-bottom:1rem;
 }
 
+.container--forCenter{
+  text-align: center;
+}
 .background-light{
   background-color: var(--color-light);
   border-radius: 3px;
@@ -641,6 +656,11 @@ hr {
   padding-bottom:1rem;
   }
 
+  .block-extend-y{
+    padding-bottom: 7rem;
+  }
+ 
+
   .block-x{
     padding-right:2rem;
     padding-left:2rem;
@@ -655,6 +675,9 @@ hr {
       padding-right:3rem;
       padding-left:3rem;
       }
+      .block-extend-y{
+        padding-bottom: 9rem;
+      }
 
 	}
 	@media screen and (min-width:1024px){
@@ -666,6 +689,9 @@ hr {
         padding-right:4rem;
         padding-left:4rem;
         }
+        .block-extend-y{
+          padding-bottom: 12rem;
+        }
 		}
 
   .card{
@@ -676,13 +702,13 @@ hr {
   }
 
   .card--primary .card__header{
-	  background:var(--color-primary);
+	
 	  color:#fff;
 	  font-weight: 600;
   }
 
    .card--secondary .card__header{
-	  background:var(--color-secondary);
+	 
 	  color:#fff;
 	  font-weight: 600;
   }
@@ -708,6 +734,11 @@ hr {
   max-height:500px;
   z-index:-1;
 
+
+
+  }
+
+  .clip--wave{
 
   clip-path: polygon(100% 0%, 0% 0% , 0% 93.00%, 1% 92.94%, 2% 92.76%, 3% 92.48%, 4% 92.09%, 5% 91.62%, 6% 91.09%, 7% 90.51%, 8% 89.91%, 9% 89.32%, 10% 88.75%, 11% 88.23%, 12% 87.79%, 13% 87.43%, 14% 87.17%, 15% 87.03%, 16% 87.01%, 17% 87.10%, 18% 87.31%, 19% 87.63%, 20% 88.04%, 21% 88.53%, 22% 89.08%, 23% 89.66%, 24% 90.26%, 25% 90.85%, 26% 91.41%, 27% 91.90%, 28% 92.33%, 29% 92.66%, 30% 92.88%, 31% 92.99%, 32% 92.98%, 33% 92.85%, 34% 92.61%, 35% 92.26%, 36% 91.83%, 37% 91.32%, 38% 90.75%, 39% 90.16%, 40% 89.56%, 41% 88.98%, 42% 88.44%, 43% 87.96%, 44% 87.57%, 45% 87.27%, 46% 87.08%, 47% 87.00%, 48% 87.05%, 49% 87.21%, 50% 87.48%, 51% 87.86%, 52% 88.32%, 53% 88.84%, 54% 89.42%, 55% 90.01%, 56% 90.61%, 57% 91.18%, 58% 91.70%, 59% 92.16%, 60% 92.53%, 61% 92.80%, 62% 92.96%, 63% 93.00%, 64% 92.92%, 65% 92.72%, 66% 92.42%, 67% 92.02%, 68% 91.54%, 69% 90.99%, 70% 90.41%, 71% 89.81%, 72% 89.22%, 73% 88.66%, 74% 88.15%, 75% 87.72%, 76% 87.38%, 77% 87.14%, 78% 87.02%, 79% 87.01%, 80% 87.13%, 81% 87.36%, 82% 87.69%, 83% 88.12%, 84% 88.62%, 85% 89.17%, 86% 89.76%, 87% 90.36%, 88% 90.95%, 89% 91.49%, 90% 91.98%, 91% 92.39%, 92% 92.70%, 93% 92.91%, 94% 93.00%, 95% 92.97%, 96% 92.82%, 97% 92.56%, 98% 92.19%, 99% 91.74%, 100% 91.22%);
   }
@@ -775,7 +806,7 @@ hr {
 
  .icon--jk-block .card__header{
   text-align: center;
-  background: none;
+ 
 }
 
 .icon--jk-container--secondary{
@@ -947,9 +978,7 @@ padding:2rem;
   justify-items: center;
 }
 
-.container--forCenter{
-  text-align: center;
-}
+
 
 @media screen and (min-width:768px){
 .icon--jk-program .block{
@@ -959,6 +988,49 @@ padding-top:0;
   padding-top:0; 
 }
 
+}
+
+
+/* home page background */
+
+.home-bg{
+background-image:linear-gradient(
+  180deg,rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%),url(/room.e3cef171.jpeg);
+background-size: cover;
+width:auto;
+width:100%;
+height:100vh;
+background-attachment: fixed;
+
+}
+
+.home-highlight{
+  height:100vh;
+  width:auto;
+  width:100%;
+
+}
+
+/* Home wave effect*/
+
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.clipped {
+ 
+  text-transform: uppercase;
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.first {
+  -webkit-clip-path: url(#clip1);
+  clip-path: url(#clip1);
 }
 
 /*# sourceMappingURL=/base.48f2b131.css.map */
