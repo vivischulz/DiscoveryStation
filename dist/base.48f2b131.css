@@ -174,7 +174,9 @@ a{
   text-decoration: none;
 }
 
-
+::selection{
+  background-color: var(--color-pink);
+}
 
 body {
     line-height: 1.5;
@@ -350,6 +352,10 @@ p{
 .background-light{
   background-color: var(--color-light);
   border-radius: 3px;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .title-center{
@@ -999,38 +1005,33 @@ background-image:linear-gradient(
 background-size: cover;
 width:auto;
 width:100%;
-height:100vh;
+/* height:100vh; */
 background-attachment: fixed;
-
 }
 
-.home-highlight{
-  height:100vh;
-  width:auto;
-  width:100%;
-
+.home-bg svg{
+  display:block; /* very important- make sure svg takes entire space */
 }
 
-/* Home wave effect*/
+.home-clipped{
+ display:flex;
+ flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-top:5rem;
+}
 
-.svg {
-  position: absolute;
-  width: 0;
-  height: 0;
+
+.home-list{
+  line-height: 2;
 }
-.clipped {
- 
-  text-transform: uppercase;
-  width: 100%;
-  height: 100vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
- 
-}
-.first {
-  -webkit-clip-path: url(#clip1);
-  clip-path: url(#clip1);
+
+
+/* testimonial */
+.block--testimonial{
+width:auto;
+height:800px;
+
 }
 
 /*# sourceMappingURL=/base.48f2b131.css.map */
