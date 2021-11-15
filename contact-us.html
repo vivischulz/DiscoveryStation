@@ -61,7 +61,38 @@
         <h1 class="banner--title">Contact us</h1>
       </div>
 
+<div class="wrapper grey">
+  <h2>We are here to answer any questions or inquiries you may have regarding our programs. If you think that Discovery Station Preschool may be the right place for your family, we would love to hear from you!</h2>
+  <!--contact us-block-->
+<form  class="form-contact" name="contact" method="POST" data-netlify="true">
+  <p>
+    <input class="form-control" type="text" name="name" placeholder="Name" minlength="1" maxlength="100" required/> 
+  </p>
+  <p>
+    <input class="form-control" type="email" name="email" placeholder="Email Address" minlength="5" maxlength="255" required/>
+  </p>
+<p>
+      <input class="form-control" name="phone" type="tel" placeholder="Phone Number" minlength="10" maxlength="13">
+  </p>
 
+ <p>How would you like us to contact you?</p>
+ <p>
+    <input type="checkbox" id="phone">
+    <label class="label-inline" for="phone">Phone</label> 
+    <input type="checkbox" id="email">
+    <label class="label-inline" for="email">Email</label> 
+ </p>
+  <p>
+     <textarea class="form-control" name="message" 
+                            placeholder="Message" minlength="3" maxlength="500" required></textarea>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+
+</div>
 
 
 
