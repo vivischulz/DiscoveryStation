@@ -217,7 +217,7 @@ p{
 
 @media screen and (min-width:375px){
   h1{
-    font-size: 3.6rem;
+    font-size: 4rem;
   }  
   h2 {
     font-size: 2.5rem;
@@ -242,7 +242,7 @@ p{
 
 @media screen and (min-width:768px){
     h1{
-      font-size: 4rem;
+      font-size: 6rem;
     }  
     h2{
       font-size: 3rem;
@@ -266,7 +266,7 @@ p{
 
 @media screen and (min-width:1024px){
   h1{
-    font-size: 6rem;
+    font-size: 8rem;
   }   
   
   h2{
@@ -652,7 +652,7 @@ hr {
 	background: var(--color-light);
 }
 .wrapper{
-	max-width:1200px;
+	max-width:1300px;
 	margin:0 auto;
 }
 
@@ -752,6 +752,7 @@ hr {
   .container--gradient{
     background:linear-gradient(
       180deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%);
+      
   }
 
   .container--title{
@@ -1058,5 +1059,162 @@ justify-content: space-between;
   padding-top:3rem;
   padding-bottom:3rem;
 }
+
+/* contact us */
+
+.play-outside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
+
+width:100%;
+}
+
+.contact-us-container--gradient{
+  background:linear-gradient(
+    180deg,rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.1) 100%);
+    
+}
+
+
+.play-outside--img{
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(40% at 50% 50%);
+  z-index: -1; /* must have for gradiants*/
+  position:relative;  /* must have for gradiants*/
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+@media screen and (min-width:768px){
+.grid--1x2-contact{
+  grid-template-columns: auto 70%;
+}
+
+.play-outside--img{
+  -webkit-clip-path: inset(10px round 80px 20px 30px 10px);
+  clip-path: inset(10px round 90px 20px 30px 10px);
+}
+
+}
+
+
+/* contact us  form*/
+.form-contact{
+  padding-top: 2rem;
+  width:100%;
+  padding-left:3rem;
+  padding-right:3rem;
+}
+
+.form-contact p{
+  margin-top:2rem;
+}
+
+.form-control{
+  background-color: var(--color-light);
+  width:100%;
+  outline:0;
+  border:none;
+  padding:1rem;
+  border-radius: 5px;
+}
+
+/* form placehorder */
+
+::placeholder {
+  color:var(--color-grey);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:var(--color-grey);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color:var(--color-grey);
+}
+
+
+
+/* Base for label styling */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: 0;
+  opacity: 0.01;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 4.5rem;
+  cursor: pointer;
+}
+
+
+  /* checkbox aspect */
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4em;
+    height: 1.4em;
+    border:none;
+    background:var(--color-light);
+    border-radius: 5px;
+   
+    -webkit-transition: all .275s;
+        transition: all .275s;
+  }
+
+  /* checked mark aspect */
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
+    content: 'v';
+    position: absolute;
+    top: .424em;
+    left: .20em;
+    font-size: 1.375em;
+    color: var(--color-secondary);
+    line-height: 0;
+    -webkit-transition: all .2s;
+        transition: all .2s;
+  }
+
+  /* checked mark aspect changes */
+  [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(45deg);
+        transform: scale(0) rotate(45deg);
+  }
+
+  [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+  }
+
+/* form bottom*/
+  .form-buttom{
+    border:none;
+    background-color: var(--color-pink);
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left:4rem;
+    padding-right:4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+
+  .form-buttom:hover{
+    background-color: var(--color-secondary);
+    color:white;
+  }
 
 /*# sourceMappingURL=/base.48f2b131.css.map */
