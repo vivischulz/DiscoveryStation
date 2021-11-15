@@ -629,8 +629,11 @@ hr {
   }
 
   /* icon */
-  .icon{
-    font-size:1.6rem;
+.icon{
+  font-size:1.6rem;
+}
+  .icon--chevron{
+    
     position:absolute;
     top:20px;
    right:0;    
@@ -882,4 +885,26 @@ padding-top:5rem;
 width:auto;
 height:800px;
 
+}
+.icon--testmonial{
+  padding:2rem;
+}
+.testimonial__quote{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+.testmonial--p{
+  padding:1.5rem 2rem 2rem 2rem;
+}
+
+.testmonial--footer{
+  padding-top:2rem;
+}
+
+.testimonial-section{
+  padding-top:3rem;
+  padding-bottom:3rem;
 }
