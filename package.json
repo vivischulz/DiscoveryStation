@@ -14,5 +14,6 @@
   },
   "dependencies": {
     "embla-carousel": "^5.0.1"
-  }
+  },
+    "minifySvg": false
 }
