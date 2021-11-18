@@ -1139,6 +1139,7 @@ border:none;
   height:100%;
   border-radius: 10px;
 
+
 }
 
 .container--gradient-location{
@@ -1148,6 +1149,8 @@ border:none;
  border-radius: 10px;
 
  margin:0 auto;
+ max-width:900px;
+ width:100%;
 }
 
 .padding--bottom{
@@ -1181,16 +1184,7 @@ border:none;
 
 }
 
-@media screen and (min-width:1335px){
 
-.container--gradient-location{
-  background:
- linear-gradient(to right,rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 40%);
-}
-
-
-
-}  
 
 
 /* card layout -location */
@@ -1217,6 +1211,8 @@ border:none;
 
 .card-layout__thumb{
   grid-area:1/2;
+  max-width:900px;
+  width:100%;
 }
   
 
@@ -1329,14 +1325,14 @@ font-size: 2rem;
   
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 858px){
 
   .card-layout__content{
   padding:8rem 6rem 0 6rem;
   }
 
   .card-layout_button{
-    margin:0 5rem 6rem 0;
+    margin:0 5rem 3rem 0;
   }
 
   .link-arrow{
@@ -1364,6 +1360,20 @@ font-size: 2rem;
 
 }
 
+@media screen and (min-width:992px){
+
+  .container--gradient-location{
+    background:
+   linear-gradient(to bottom,rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 60%, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 40%);
+  
+  }
+
+  .card-layout_button{
+    margin:0 9rem 10rem auto;
+  }
+  
+  }  
+
 @media only screen and (min-width: 1024px){
 
   .card-layout__content{
@@ -1379,14 +1389,7 @@ font-size: 2rem;
    font-weight:700;
   }
 
-  .card-layout_button{
-    margin:0 3rem 3rem auto;
-  }
+
 
 }
 
-@media only screen and (min-width: 1335px){
-.card-layout_button{
-  margin:0 9rem 20rem auto;
-}
-}
