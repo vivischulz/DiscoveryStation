@@ -194,7 +194,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../css/reset.css":"src/css/reset.css","/Users/Vivi/Documents/Website/DiscoveryStation-whole/DiscoveryStation/media/room.jpeg":[["room.e3cef171.jpeg","media/room.jpeg"],"media/room.jpeg"],"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../css/reset.css":"src/css/reset.css","/Users/Vivi/Documents/Website/DiscoveryStation-whole/DiscoveryStation/media/room.jpeg":[["room.e3cef171.jpeg","media/room.jpeg"],"media/room.jpeg"],"/Users/Vivi/Documents/Website/DiscoveryStation-whole/DiscoveryStation/media/wave-bg.svg":[["wave-bg.a26a8b2d.svg","media/wave-bg.svg"],"media/wave-bg.svg"],"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -222,7 +222,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55086" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49970" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

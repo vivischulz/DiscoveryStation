@@ -8,7 +8,10 @@
     <meta name="keyword" content="Langley preschool, Surrey preschool, teaching, learning, programs for kids, alphabet, ABC, creative, creativity, reading, writing, counting, math skills, knowledge, teachers, preschoolers, students, quality teaching, letters, numbers">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pangolin&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/2b43a8c685.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="discoveryStationTrain.ico" type="image/x-icon"> 
     <link rel="stylesheet" href="./src/css/base.css">
@@ -46,7 +49,7 @@
        </div>
 
     <!-- banner img-->  
-      <div class="container--gradient container--title">
+      <div class="container--gradient container--txtover">
         <picture>
           <source
             type="image/jpg"
@@ -58,10 +61,11 @@
             alt="Discovery Station Preschool News"/>
            
         </picture>
-        <h1 class="banner--title">Contact us</h1>
+        <h1 class="banner--txtover title--weight">Contact us</h1>
       </div>
 
 <div class="wrapper grey block-x block block-extend-y">
+  
   <h3 class="block">We are here to answer any questions or inquiries you may have regarding our programs. If you think that Discovery Station Preschool may be the right place for your family, we would love to hear from you!</h3>
   <!--contact us-block-->
 
@@ -82,7 +86,7 @@
                        </picture>
              </div>
           
-           
+             
            
              <!-- form contact -->  
            <div class="block">
@@ -101,9 +105,9 @@
              <fieldset class="contact-fildset">
               <legend><p class="grey">How would you like us to contact you?</p></legend>
               <p class="grey">
-                 <input type="checkbox" name="contactby[]" value="contactby" id="email">
+                 <input type="checkbox" name="contactby[]" value="contactby_email" id="email">
                  <label  for="email">Email</label>
-                 <input type="checkbox" name="contactby[]" id="phone" value="contactby">
+                 <input type="checkbox" name="contactby[]" id="phone" value="contactby_phone">
                  <label  for="phone">Phone</label>
               </p>
               </fieldset>
@@ -122,9 +126,54 @@
          </div>
 </div>
 
-<div class="block-location wrapper block  container--forCenter">
-<h1> Our Location </h1>
+
+
+
+<div class="location">
+  <div class="block-location ">
+  
+  <div class="block wrapper">
+    <h1 class="padding--bottom container--forCenter title--weight"> Our Location </h1>
+      <figure class="container--gradient-location card-layout">
+          <picture class="card-layout__thumb">
+                  <source
+                    type="image/jpg" media="(max-width:768px)"
+                    srcset="media/location@2x.jpeg 720w, media/location.jpeg 360w">
+                    <source type="image/jpg" media="(min-width:768px)" srcset="media/location-cropped@2x.jpeg 720w, media/location-cropped.jpeg 360w">
+                  <img class="location-img"
+                    src="media/location@2x.jpeg"
+                    alt="Discovery Station Preschool Location"/>
+                </picture>
+  
+          <div class="card-layout__content">
+            <div class="card-layout__content--s1">
+              <h2 class="title--weight">Willoughby</h2>
+              <h3>- Shepherd of
+              the Valley Church
+              </h3>
+            </div>
+          
+
+            <h4><i class="fas fa-map-marker-alt icon"></i>20097 72 Ave, Langley, BC  V2Y 1S7</h4>
+            <h4><i class="fas fa-phone-alt icon"></i>604-533-5881</h4>
+          </div>
+           <a href="https://goo.gl/maps/ZPr6To4rBCxNRLqD6" target="_blank" class="card-layout_button btn btn--secondary link-arrow ">Get Directions</a>
+  
+      </figure>
+  
+  
+     </div>
+  
+  
+  
+  
+  </div>
 </div>
+ 
+
+
+
+
 
 
 
