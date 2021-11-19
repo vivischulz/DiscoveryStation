@@ -89,6 +89,14 @@
   }
 
 
+  @media screen and (min-width:768px){
+   
+   .embla{
+    margin-top:110px;
+   }
+  }
+
+
   
 
 /*# sourceMappingURL=/js.d818e0ef.css.map */
