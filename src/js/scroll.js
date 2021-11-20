@@ -4,11 +4,11 @@
  function scrollFunction() {
    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
      document.getElementById("nav").style.padding = "1rem 3rem";
-     document.getElementById("nav").style.fontSize = "1.8rem";
+     
      document.getElementById("nav__brand").style.width = "180px";
    } else {
      document.getElementById("nav").style.padding= "2rem 3rem";
-     document.getElementById("nav").style.fontSize = "2rem";
+    
      document.getElementById("nav__brand").style.width = "200px";
    }
  }

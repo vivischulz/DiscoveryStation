@@ -154,17 +154,20 @@
         <div class="block-x">
           <div class="program-focus-list block">
             <div class="grid grid--1x2 program-focus--wrap">
-              <picture class="program-focus--title">
-                <source
-                  type="image/jpg"
-                  srcset="media/nature@2x.jpeg 720w, media/nature.jpeg 360w"
-                  sizes="100vw"
-                />
-                <img
-                  src="media/nature@2x.jpeg"
-                  alt="Discovery Preschooler Nature Walk"
-                />
-              </picture>
+              
+                <picture  data-aos="fade-up"
+                data-aos-duration="3000" class="program-focus--title">
+                  <source
+                    type="image/jpg"
+                    srcset="media/nature@2x.jpeg 720w, media/nature.jpeg 360w"
+                    sizes="100vw"
+                  />
+                  <img
+                    src="media/nature@2x.jpeg"
+                    alt="Discovery Preschooler Nature Walk"
+                  />
+                </picture>
+             
               <div class="program-focus-content">
                 <div>
                   <h5 class="header--padding underline">
@@ -216,8 +219,10 @@
             </div>
           </div>
           <div class="program-focus-list block">
-            <div class="grid grid--1x2 program-focus--wrap">
-              <picture class="program-focus--title program-focus--order">
+            <div  
+             class="grid grid--1x2 program-focus--wrap ">
+              <picture data-aos="fade-up"
+              data-aos-duration="3000" class="program-focus--title program-focus--order">
                 <source
                   type="image/jpg"
                   srcset="
@@ -247,7 +252,8 @@
 
           <div class="program-focus-list block">
             <div class="grid grid--1x2 program-focus--wrap">
-              <picture class="program-focus--title">
+              <picture  data-aos="fade-up"
+              data-aos-duration="3000" class="program-focus--title">
                 <source
                   type="image/jpg"
                   srcset="media/dance@2x.jpeg 720w, media/dance.jpeg 360w"
@@ -315,7 +321,8 @@
                 </ul>
                 <p>They will learn valuable moral and spiritual principals.</p>
               </div>
-              <picture class="program-focus--title program-focus--order">
+              <picture data-aos="fade-up"
+              data-aos-duration="3000" class="program-focus--title program-focus--order">
                 <source
                   type="image/jpg"
                   srcset="
@@ -696,8 +703,12 @@ The class size is limited to ensure individual attention, while fostering meanin
 
     <!-- Script -->
     <script src="src/js/collapsible.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="src/js/scroll.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="src/js/scroll-smooth.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
