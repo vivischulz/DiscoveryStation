@@ -74,7 +74,7 @@
              
            
              <!-- form contact -->  
-           <div class="block">
+           <div id="contact-us" class="block">
            <h2 class="container--forCenter"> Email Contact Form </h2>
              <form class="form-contact" name="contact" method="POST" data-netlify="true">
                <p>
@@ -88,7 +88,7 @@
                </p>
                
              <fieldset class="contact-fildset">
-              <legend><p class="grey">How would you like us to contact you?</p></legend>
+              <legend><h6 class="grey">How would you like us to contact you?</h6></legend>
               <p class="grey">
                  <input type="checkbox" name="contactby[]" value="contactby_email" id="email">
                  <label for="email">Email</label>
@@ -96,9 +96,9 @@
                  <label for="phone">Phone</label>
               </p>
               </fieldset>
-              <p>
+              
                 <div data-netlify-recaptcha="true"></div>
-              </p>
+              
                <p>
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" minlength="3" maxlength="500" required=""></textarea>
                </p>
@@ -113,15 +113,14 @@
 
 
 
-<div class="location">
-  <div class="block-location ">
+<div id="location" class="grid location wrapper">
   
-  <div class="block wrapper">
+  <div class="block block-x block-extend-y">
     <h1 class="padding--bottom container--forCenter title--weight"> Our Location </h1>
-      <figure class="container--gradient-location card-layout">
+      <figure class="container--gradient-location card-layout  ">
           <picture class="card-layout__thumb">
-                  <source type="image/jpg" media="(max-width:768px)" srcset="/location@2x.80289dba.jpeg 720w,/location.41524ef4.jpeg 360w">
-                    <source type="image/jpg" media="(min-width:768px)" srcset="/location-cropped@2x.46150715.jpeg 720w,/location-cropped.3ea6f4de.jpeg 360w">
+                  <source type="image/jpg" media="(max-width:768px)" srcset="/location@2x.80289dba.jpeg 720w,/location.41524ef4.jpeg 360w" sizes="100vw">
+                    <source type="image/jpg" media="(min-width:768px)" srcset="/location-cropped@2x.46150715.jpeg 720w,/location-cropped.3ea6f4de.jpeg 360w" sizes="100vw">
                   <img class="location-img" src="/location@2x.80289dba.jpeg" alt="Discovery Station Preschool Location">
                 </picture>
   
@@ -134,8 +133,9 @@
             </div>
           
 
-            <h4><i class="fas fa-map-marker-alt icon"></i>20097 72 Ave, Langley, BC  V2Y 1S7</h4>
-            <h4><i class="fas fa-phone-alt icon"></i>604-533-5881</h4>
+            <h4><i class="fas fa-map-marker-alt icon-location"></i>20097 72 Ave, Langley, BC  V2Y 1S7</h4>
+            <h4><i class="fas fa-phone-alt icon-location"></i>604-533-5881</h4>
+            <h4><i class="fas fa-envelope icon-location"></i><a href="mailto:discoverystation@hotmail.com " target="_blank">discoverystation@hotmail.com </a></h4>
           </div>
            <a href="https://goo.gl/maps/ZPr6To4rBCxNRLqD6" target="_blank" class="card-layout_button btn btn--secondary link-arrow ">Get Directions</a>
   
@@ -144,12 +144,96 @@
   
      </div>
   
-  
-  
-  
-  </div>
+  <div>
+
+ </div>
+
 </div>
- 
+
+<div class="background-wave">
+  <footer class="wrapper block block-x">
+    <div class="grid grid--1x2 grid--1x4 grid-footer">
+      
+    
+        <div class="footer--content">
+          <a href="/index.html">
+            <h2 class="primary heavy">Home</h2>
+          </a>
+          <div>
+            <a href="/index.html#exploring-god">
+              <p>Exploring God's World</p>
+            </a>
+            <a href="/index.html#program-highlights">
+              <p>Program Highlights</p>
+            </a>
+            <a href="/index.html#testimonial">
+              <p>Testimonial</p>
+            </a>
+          </div>
+        </div>
+        <div class="footer--content">
+          <a href="/about-us.html">
+            <h2 class="primary heavy">About Us</h2>
+          </a>
+          <div class="grey">
+            <a href="/about-us.html#philosophy">
+              <p>Philosophy</p>
+            </a>
+            <a href="/about-us.html#our-history">
+              <p>Our History</p>
+            </a>
+            <a href="/about-us.html#our-teachers">
+              <p>Our Teachers</p>
+            </a>
+            <a href="/about-us.html#family-time">
+              <p>Family Time</p>
+            </a>
+          </div>
+        </div>
+     
+
+      <div class="footer--content">
+        <a href="/our-program.html">
+          <h2 class="primary heavy">Our Programs</h2>
+        </a>
+        <div class="grey">
+          <a href="/our-program.html#program_focus">
+            <p>Programs Fcous</p>
+          </a>
+          <a href="/our-program.html#junior_kindergarten">
+            <p>Junior kindergarten</p>
+          </a>
+          <a href="/our-program.html#ready_to_read">
+            <p>Ready to Read</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer--content">
+        <a href="/contact-us.html">
+          <h2 class="primary heavy">Contact Us</h2>
+        </a>
+        <div class="grey">
+          <a href="/contact-us.html#contact-us">
+            <p>Contact Form</p>
+          </a>
+          <a href="/contact-us.html#location">
+            <p>Location</p>
+          </a>
+        </div>
+      </div>
+   </div>
+   <div class="block  footer-icon">
+     <div class="grid grid-footer--icon">
+       <a href="https://www.facebook.com/DiscoveryStationPreschool" target="_blank"><i class="fab fa-facebook icon secondary"></i></a>
+       <a href=""><i class="fab fa-twitter icon secondary"></i></a>
+       <a href=""><i class="fab fa-youtube icon secondary"></i></a>
+     </div>
+   </div>
+  
+  </footer>
+</div>
+
+
 
 
 
