@@ -270,7 +270,6 @@ p{
 
 /* nav */
 
-
 .bars{
 font-size:4rem;
 color:var(--color-secondary);
@@ -297,7 +296,6 @@ color:var(--color-secondary);
   flex-wrap:wrap;
   padding: 1rem;
   align-items: center;
-
 }
 
 @media screen and (min-width:768px){
@@ -307,7 +305,7 @@ color:var(--color-secondary);
     left: 0;
     z-index: 9999;
     width: 100%;
-  min-height:110px;
+  /* min-height:110px; */
   background-color: white;
   box-shadow:0 0 7px rgb(0 0 0 / 10%);
   padding:2rem 3rem;
@@ -358,20 +356,33 @@ border-bottom:0.5px var(--color-pink) solid;
 }
 
 .collapsible__content{
-max-height:0;
-overflow:hidden;
-opacity:0;
-transition:all 0.15s;
+
+display: none;
 
 }
 
 .collapsible--expanded .collapsible__content{
-max-height:160vh;
-opacity:1;  
+  display: block;
+
 }
 
 @media screen and (min-width:768px){
   
+  .collapsible__content{
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    transition:all 0.15s;
+   
+    
+    }
+    
+    .collapsible--expanded .collapsible__content{
+
+    max-height:100vh;
+    opacity:1;  
+    }
+
 
   .nav__item {
     padding:0.5rem 2rem;
@@ -523,7 +534,7 @@ border-radius: 0 0 15px 15px;
 
 .nav--dropdown:hover .nav--dropdown__content{
  
-  padding-top: 5rem; 
+  padding-top: 4.5rem; 
   padding-bottom: 1rem; 
 }
 
@@ -1088,7 +1099,8 @@ width:100%;
 }
 
 .form-contact p,
-.form-contact h6{
+.form-contact h6,
+.form-recaptcha{
   margin-top:2rem;
 }
 
