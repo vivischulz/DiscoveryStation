@@ -220,6 +220,14 @@ p{
   font-size: 1.6rem; 
 }
 
+footer h2{
+  font-size:2.8rem;
+}
+
+footer p{
+  font-size:2.2rem;
+}
+
 .nav p{ 
   font-size: 2.4rem;
 }
@@ -246,7 +254,10 @@ p{
   p{
     font-size: 1.6rem; 
   }
-  
+ 
+
+
+
 }
 
 
@@ -271,6 +282,14 @@ p{
     }
     p{
       font-size: 2rem; 
+    }
+
+    footer h2{
+      font-size:3rem;
+    }
+    
+    footer p{
+      font-size:2.5rem;
     }
   }
 
@@ -913,6 +932,10 @@ margin:3rem;
   margin-right:8px;
 }
 
+footer .icon{
+  font-size:3rem;
+}
+
   .icon--chevron{
     
     position:absolute;
@@ -979,6 +1002,9 @@ margin:3rem;
       width:9rem;
       height:9rem;
     }
+    footer .icon{
+      font-size:4rem;
+    }
 
     }
     @media screen and (min-width:1024px){
@@ -988,6 +1014,9 @@ margin:3rem;
       .icon-location{
         font-size:2.4rem;
         margin-right:1.5rem;
+      }
+      footer .icon{
+        font-size:4.5rem;
       }
 
       .icon--jk{
@@ -1658,9 +1687,16 @@ font-size: 2rem;
 }
 
 footer p{
-  line-height:2;
+  line-height:2.5;
 }
 
+.sub-title a:nth-child(even){
+color:var(--color-light-grey);
+}
+
+footer h2{
+  padding-bottom:2rem;
+}
 footer h2:hover{
   color:var(--color-pink);
 }
@@ -1669,9 +1705,13 @@ footer a{
   color:var(--color-grey);
 }
 
+
 footer a:hover{
   color:var(--color-secondary);
 }
+.sub-title a:nth-child(even):hover{
+  color:var(--color-secondary);
+  }
 
 .footer--content{
   padding-bottom:2rem;
@@ -1685,7 +1725,7 @@ footer a:hover{
 }
 
 .footer-icon{
-  max-width:300px;
+  max-width:500px;
   width:100%;
   margin:0 auto;
 }
