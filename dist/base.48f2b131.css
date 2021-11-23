@@ -445,7 +445,8 @@ color:var(--color-secondary);
 }
 
 .nav__brand>img{
-  width:160px;
+  width:170px;
+  height:auto;
   transform:translateY(5px);
 }
 
@@ -453,9 +454,7 @@ color:var(--color-secondary);
   .bars{
     font-size:5rem;
     }
-  .nav__brand>img{
-    width:250px;
-  }
+ 
 }
 
 .nav{
