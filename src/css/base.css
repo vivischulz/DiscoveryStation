@@ -393,16 +393,17 @@ display: none;
 
 
 .about-us--collapsible .collapsible__content{
-   
- max-height:160vh;
+ 
+ max-height:300vh;
     opacity:1;
   }
 
  .about-us--collapsible.collapsible--expanded .collapsible__content{
   max-height:0;
-    overflow:hidden;
-    opacity:0;
-    transition:all 0.3s;
+  overflow:hidden;
+  opacity:0;
+  transition:all 0.3s;
+
   }
 
 
@@ -766,7 +767,7 @@ margin:3rem;
     
     position:absolute;
     top:15px;
-   right:0;    
+   right:0;  
   }
 
   .icon-location{
