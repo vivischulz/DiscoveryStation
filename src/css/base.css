@@ -355,16 +355,15 @@ border-bottom:0.5px var(--color-pink) solid;
  color:var(--color-pink);
 }
 
-.collapsible__content{
-
+ .collapsible__content{
 display: none;
-
 }
 
 .collapsible--expanded .collapsible__content{
   display: block;
-
 }
+
+
 
 @media screen and (min-width:768px){
   
@@ -394,13 +393,13 @@ display: none;
 
 
 .about-us--collapsible .collapsible__content{
-
-  max-height:160vh;
+   
+ max-height:160vh;
     opacity:1;
   }
 
-  .about-us--collapsible .collapsible--expanded .collapsible__content{
-    max-height:0;
+ .about-us--collapsible.collapsible--expanded .collapsible__content{
+  max-height:0;
     overflow:hidden;
     opacity:0;
     transition:all 0.3s;
