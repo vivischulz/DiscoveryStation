@@ -295,7 +295,7 @@ color:var(--color-secondary);
 }
 
 .nav__brand>img{
-  width:100%;
+  /* width:100%; */
   height:auto;
   aspect-ratio: attr(width) / attr(height);
   transform:translateY(5px);
@@ -374,7 +374,7 @@ border-bottom:0.5px var(--color-pink) solid;
  color:var(--color-pink);
 }
 
- .collapsible__content{
+.collapsible__content{
 display: none;
 }
 
@@ -397,7 +397,7 @@ display: none;
     
     .collapsible--expanded .collapsible__content{
 
-    max-height:100vh;
+    max-height:100%;
     opacity:1;  
     }
 
@@ -410,20 +410,20 @@ display: none;
 
 /* about-us */
 
-
-.about-us--collapsible .collapsible__content{
- 
- max-height:300vh;
-    opacity:1;
-  }
-
- .about-us--collapsible.collapsible--expanded .collapsible__content{
-  max-height:0;
+.about-us .collapsible__content{
+   max-height:0;
   overflow:hidden;
   opacity:0;
   transition:all 0.3s;
-
+ 
   }
+
+  .about-us.collapsible--expanded .collapsible__content{
+    opacity:1;
+    max-height:300vh;
+  }
+
+
 
 
 .collapsible__header{
