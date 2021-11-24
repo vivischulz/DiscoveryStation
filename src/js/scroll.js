@@ -5,10 +5,10 @@
    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
      document.getElementById("nav").style.padding = "1rem 3rem";
      
-     document.getElementById("nav__brand").style.width = "150px";
+     document.getElementById("nav__brand").style.width = "160px";
    } else {
      document.getElementById("nav").style.padding= "2rem 3rem";
     
-     document.getElementById("nav__brand").style.width = "170px";
+     document.getElementById("nav__brand").style.width = "180px";
    }
  }

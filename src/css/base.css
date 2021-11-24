@@ -295,8 +295,9 @@ color:var(--color-secondary);
 }
 
 .nav__brand>img{
-  width:170px;
+  width:100%;
   height:auto;
+  aspect-ratio: attr(width) / attr(height);
   transform:translateY(5px);
 }
 
